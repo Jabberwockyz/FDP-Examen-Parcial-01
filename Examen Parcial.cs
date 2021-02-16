@@ -144,7 +144,7 @@ namespace Examen_Parcial
                                                     Console.WriteLine("Billetes de 1000 dispensados: " + RetB1000);
                                                     Console.WriteLine("Billetes de 500 dispensados: " + RetB500);
                                                     Console.WriteLine("Billetes de 200 dispensados: " + RetB200);
-                                                    Console.WriteLine("Billetes de 200 dispensados: " + RetB100);
+                                                    Console.WriteLine("Billetes de 100 dispensados: " + RetB100);
                                                 }
                                             }
                                             else
@@ -178,6 +178,9 @@ namespace Examen_Parcial
                                         int Rest3 = Rest2 %= 200;
                                         if (Rest3 == 0)
                                         {
+                                            B500 = B500 - RetB500;
+                                            B1000 = B1000 - RetB1000;
+                                            B200 = B200 - RetB200;
                                             Console.WriteLine("Billetes de 1000 dispensados: " + RetB1000);
                                             Console.WriteLine("Billetes de 500 dispensados: " + RetB500);
                                             Console.WriteLine("Billetes de 200 dispensados: " + RetB200);
@@ -188,6 +191,10 @@ namespace Examen_Parcial
                                             int Rest4 = Rest3 %= 100;
                                             if (Rest4 == 0)
                                             {
+                                                B500 = B500 - RetB500;
+                                                B1000 = B1000 - RetB1000;
+                                                B200 = B200 - RetB200;
+                                                B100 = B100 - RetB100;
                                                 Console.WriteLine("Billetes de 1000 dispensados: " + RetB1000);
                                                 Console.WriteLine("Billetes de 500 dispensados: " + RetB500);
                                                 Console.WriteLine("Billetes de 200 dispensados: " + RetB200);
@@ -196,6 +203,10 @@ namespace Examen_Parcial
                                             else
                                             {
                                                 RetB100++;
+                                                B500 = B500 - RetB500;
+                                                B1000 = B1000 - RetB1000;
+                                                B200 = B200 - RetB200;
+                                                B100 = B100 - RetB100;
                                                 Console.WriteLine("Billetes de 1000 dispensados: " + RetB1000);
                                                 Console.WriteLine("Billetes de 500 dispensados: " + RetB500);
                                                 Console.WriteLine("Billetes de 200 dispensados: " + RetB200);
@@ -241,7 +252,7 @@ namespace Examen_Parcial
                                                 Console.WriteLine("Billetes de 1000 dispensados: " + RetB1000);
                                                 Console.WriteLine("Billetes de 500 dispensados: " + RetB500);
                                                 Console.WriteLine("Billetes de 200 dispensados: " + RetB200);
-                                                Console.WriteLine("Billetes de 200 dispensados: " + RetB100);
+                                                Console.WriteLine("Billetes de 100 dispensados: " + RetB100);
                                             }
                                         }
                                         else
